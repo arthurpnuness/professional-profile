@@ -1,0 +1,27 @@
+.inline
+{
+  display: inline;  
+  background-color: rgba(128, 0, 128, 0.377);
+  /*
+  width: 200px;
+  height: 200px;
+  NÃO FUNCIONAM NO DISPLAY INLINE
+  */
+}
+
+.block
+{
+    display: block;
+    background-color: rgba(128, 0, 128, 0.329);
+    width: 200px;
+    height: 200px;
+}   
+
+.inline_block
+{
+    display: inline-block;
+    background-color: rgba(128, 0, 128, 0.329);
+    width: 200px;
+    height: 200px;
+}
+

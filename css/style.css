@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap");
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: #dddddd;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  display: flex;
+  color: #30475e;
+}
+
+main {
+  max-width: 70%;
+  padding: 4rem 4rem 2rem 4rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+main a,
+main a:visited,
+main a:focus,
+main a:active,
+main a:link {
+  color: #30475e;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+main:has(p) {
+  max-width: 95ch;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Aside styles */
+.sidebar {
+  background-color: #222831;
+  min-width: 15rem;
+  width: 25rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #222831;
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.15);
+}
+
+.profile_picture {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  border: 5px solid #804DFF;
+  box-shadow: 0px 0px 2rem rgba(240, 84, 84, 0);
+  overflow: hidden;
+  position: relative;
+  outline: 2px solid #804DFF;
+  outline-offset: 0.5rem;
+  transition: all 250ms ease-in-out;
+}
+
+.profile_picture:hover {
+  box-shadow: 0px 0px 2rem #804DFF;
+  outline: 2px solid #804DFF;
+  outline-offset: -1px;
+}
+
+.profile_picture img {
+  position: absolute;
+  top: -1rem;
+}
+
+.menu {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu .active {
+  font-weight: bold;
+}
+
+.menu a,
+.menu a:visited,
+.menu a:link,
+.menu a:active {
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 0;
+  transition: all 0.5s ease;
+}
+
+.menu a:hover,
+.menu a:focus {
+  font-size: 1.1rem;
+}
+
+/* About */
+.primary {
+  color: #13dd3f;
+}
+
+.about_titles {
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.about_titles svg {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.about_titles span {
+  vertical-align: middle;
+}
+
+.email_link {
+  margin-left: 1rem;
+}
+
+.about {
+  margin-top: 2rem;
+  text-align: justify;
+}
+
+.social {
+  margin-top: 3rem;
+}
+
+.social_buttons {
+  width: 25rem;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0;
+  margin-top: 1rem;
+}
+.social_buttons li {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #30475e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
+  outline: 0;
+  transition: outline 250ms ease;
+}
+.social_buttons li:hover {
+  outline: 3px solid #f05454;
+  animation: vertical-shaking 0.7s infinite;
+  animation-delay: 600ms;
+}
+
+@keyframes vertical-shaking {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  75% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.social_buttons li svg {
+  fill: #fff;
+  width: 1.5rem;
+}
+
+.social_buttons .face {
+  width: 1rem;
+}
+
+.knowledges-list {
+  margin-left: 3.5rem;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+
+.plus {
+  color: rgba(255, 0, 0, 0.521);
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-left: 0.5rem;
+  letter-spacing: 0.3rem;
+}
+
+.goal-list {
+  margin-left: 3.5rem;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+.goal-list > li {
+  margin-bottom: 1.5rem;
+}

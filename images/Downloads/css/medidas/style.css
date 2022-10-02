@@ -1,0 +1,31 @@
+/*Relativos ao percentual da tela*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.caixa1{
+    background-color: purple;
+    height: 100vh;
+    width: 100vw;
+}
+
+.caixa2{
+    background-color: cadetblue;
+    height: 10vh;
+    width: 100vw;
+}
+
+.caixa3{
+    background-color: cornflowerblue;
+    height: 45vh;
+    width: 400px;
+    float: left;
+}
+
+.caixa4{
+    background-color: goldenrod;
+    height: 50vh;
+    width: 70vw;
+    float: left;
+}

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cabecalho{
+    width: 100vw;
+    height: 25vh;
+    background-color: blue;
+}
+
+/*Corpo*/
+#conteudo{
+    width: 70vw;
+    height: 50vh;
+    background-color: purple;
+    float: left;
+    
+}
+
+#as{
+    width: 30vw;
+    height: 50vh;
+    background-color: aqua;
+    float: right;
+}
+
+
+/*Rodape*/
+
+#rodape{
+    width: 100vw;
+    height: 25vh;
+    background-color: blue;
+    clear: both;
+}

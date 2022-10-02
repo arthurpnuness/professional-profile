@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+
+#box1,
+#box2,
+#box3{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#box1{
+    background-color: aqua;
+}
+#box2{
+    background-color: blueviolet;
+}
+#box3{
+    background-color: brown;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--EM e REM
+    "em" relativo ao font-size do pai ou da body
+    "rem" relativo ao elemento root-->
+    <style>
+        :root{
+            font-size: 16px;
+        }
+
+        #pai-em{
+            font-size: 10px;
+        }
+        .em{
+            font-size: 2em;
+        }
+        .rem{
+            font-size: 40px;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>EM</h1>
+    <section id="pai-em">
+        se basei no pai
+        <section class="em">
+            testando 20px
+            <section class="em">
+                testando 40px
+            </section>
+        </section>
+    </section>
+
+    <h1>REM</h1>
+    <section id="pai-em">
+        se basei no pai
+        <section class="rem">
+            testando 
+            <section class="rem">
+                testando 
+            </section>
+        </section>
+    </section>
+</body>
+</html>
