@@ -242,12 +242,8 @@ picture {
   margin-bottom: 1.5rem;
 }
 
-/* Adicione esta regra para dispositivos com largura de tela até 768 pixels */
+/* Adaptações para telas menores */
 @media screen and (max-width: 768px) {
-  body {
-    flex-direction: column;
-  }
-
   main {
     max-width: 100%;
     padding: 2rem;
@@ -256,6 +252,7 @@ picture {
   .sidebar {
     min-width: auto;
     width: 100%;
+    margin-top: 2rem;
   }
 
   .profile_picture {
@@ -264,7 +261,7 @@ picture {
   }
 
   .menu {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 
   .menu a {
