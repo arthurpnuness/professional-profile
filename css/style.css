@@ -241,3 +241,47 @@ picture {
 .goal-list > li {
   margin-bottom: 1.5rem;
 }
+
+/* Adicione esta regra para dispositivos com largura de tela até 768 pixels */
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  main {
+    max-width: 100%;
+    padding: 2rem;
+  }
+
+  .sidebar {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .profile_picture {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .menu {
+    margin-top: 2rem;
+  }
+
+  .menu a {
+    margin-bottom: 1rem;
+  }
+
+  .social_buttons {
+    width: 100%;
+  }
+
+  .social_buttons li {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .knowledges-list,
+  .goal-list {
+    margin-left: 0;
+  }
+}
