@@ -282,3 +282,11 @@ picture {
     margin-left: 0;
   }
 }
+
+@media (max-width: 600px) {
+  .language-selection a {
+      display: block;
+      margin: 10px auto;
+      width: 80%;
+  }
+}
