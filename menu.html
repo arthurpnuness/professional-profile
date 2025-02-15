@@ -4,30 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selecione o Idioma</title>
-    <link rel="stylesheet" href="path/to/your/stylemenu.css">
+    <link rel="stylesheet" href="css/stylemenu.css">
 </head>
 <body>
     <div class="container">
         <h1>Selecione o Idioma</h1>
+        <h1>Select Language</h1>
+        <h1>Seleccione idioma</h1>
         <p>Escolha o idioma em que deseja visualizar o currículo:</p>
+        <p>Choose the language in which you want to view the CV:</p>
+        <p>Elige el idioma en el que quieres ver el CV:</p>
         <div class="buttons">
-            <button onclick="carregarCurriculo('pt')">Português</button>
-            <button onclick="carregarCurriculo('en')">Inglês</button>
-            <button onclick="carregarCurriculo('es')">Espanhol</button>
+            <button onclick="sobremim('pt')">Português</button>
+            <button onclick="sobremim('en')">Inglês</button>
+            <button onclick="sobremim('es')">Espanhol</button>
         </div>
     </div>
-
-    <script>
-         function carregarCurriculo(idioma) {
-            // Redireciona para a página correspondente ao idioma
-            if (idioma === 'pt') {
-                window.location.href = 'curriculo_pt.html'; // Substitua pelo caminho correto
-            } else if (idioma === 'en') {
-                window.location.href = 'curriculo_en.html'; // Substitua pelo caminho correto
-            } else if (idioma === 'es') {
-                window.location.href = 'curriculo_es.html'; // Substitua pelo caminho correto
-            }
-        }
-    </script>
+    <script src="script/script.js"></script>
 </body>
 </html>
