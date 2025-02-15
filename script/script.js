@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     // Obter o idioma preferido do navegador
     var userLang = navigator.language || navigator.userLanguage;
@@ -14,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Verificar se o idioma do usuário é suportado
     if (supportedLangs[userLang]) {
         // Redirecionar para o diretório correspondente
-        window.location.href = supportedLangs[userLang] + './menu.html';
+        window.location.href = supportedLangs[userLang] + 'menu.html'; // Corrigido aqui
     } else {
         // Se o idioma não for suportado, redirecionar para o padrão (por exemplo, português)
         window.location.href = 'sobremim/portugues/index.html';
